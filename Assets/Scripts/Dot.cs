@@ -55,7 +55,8 @@ public class Dot : MonoBehaviour
         for (int attempt = 0; attempt < 10; attempt++)
         {
             position = new Vector2(Random.Range(xMin, xMax), Random.Range(yMin, yMax));
-            if (basket == null || Vector2.Distance(position, basket.position) >= minDistanceFromBasket)
+            if (basket == null ||
+                Vector2.Distance(position, basket.position) >= minDistanceFromBasket)
                 break;
         }
 

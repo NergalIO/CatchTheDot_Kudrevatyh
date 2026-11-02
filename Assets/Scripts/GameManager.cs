@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
 
     private void UpdateTimerText()
     {
-        // CeilToInt округляет вверх: 29.2 с показываются как 30, а 0 — только в самом конце.
+        // CeilToInt округляет вверх: 29.2 с показываются как 30, а 0 — только в конце.
         timerText.text = "Время: " + Mathf.CeilToInt(timeLeft);
     }
 
